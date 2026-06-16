@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact – BuildPro SRL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -47,67 +48,72 @@
         </div>
       </div>
 
-      <div class="contact-body">
-        <div class="contact-info-block">
-          <h3>Informații de Contact</h3>
-          <div class="contact-info-item">
-            <div class="contact-info-icon">📍</div>
-            <div class="contact-info-text">
-              <strong>Adresă</strong>
-              <p>str. Constructorilor 10,<br>Cahul, Moldova</p>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-info-icon">📞</div>
-            <div class="contact-info-text">
-              <strong>Telefon</strong>
-              <p>+373 60 123 456</p>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-info-icon">✉️</div>
-            <div class="contact-info-text">
-              <strong>Email</strong>
-              <p>contact@buildpro.md</p>
-            </div>
-          </div>
-          <div class="contact-info-item">
-            <div class="contact-info-icon">🕐</div>
-            <div class="contact-info-text">
-              <strong>Program de Lucru</strong>
-              <p>Luni – Vineri: 08:00 – 18:00<br>Sâmbătă: 09:00 – 14:00<br>Duminică: Închis</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-block">
-          <form action="https://api.sheetmonkey.io/form/pb6sccNQ1k3ftRZiqjG6G" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f-nume">Nume</label>
-                <input type="text" id="f-nume" name="nume" placeholder="Introduceți numele" required />
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="contact-info-block">
+              <h3>Informații de Contact</h3>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📍</div>
+                <div class="contact-info-text">
+                  <strong>Adresă</strong>
+                  <p>str. Constructorilor 10,<br>Cahul, Moldova</p>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="f-email">Email</label>
-                <input type="email" id="f-email" name="email" placeholder="email@exemplu.com" required />
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📞</div>
+                <div class="contact-info-text">
+                  <strong>Telefon</strong>
+                  <p>+373 60 123 456</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">✉️</div>
+                <div class="contact-info-text">
+                  <strong>Email</strong>
+                  <p>contact@buildpro.md</p>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">🕐</div>
+                <div class="contact-info-text">
+                  <strong>Program de Lucru</strong>
+                  <p>Luni – Vineri: 08:00 – 18:00<br>Sâmbătă: 09:00 – 14:00<br>Duminică: Închis</p>
+                </div>
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="f-telefon">Telefon</label>
-                <input type="tel" id="f-telefon" name="telefon" placeholder="+373 XX XXX XXX" />
-              </div>
-              <div class="form-group">
-                <label for="f-subiect">Subiect</label>
-                <input type="text" id="f-subiect" name="subiect" placeholder="Subiectul mesajului" />
-              </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="contact-form-block">
+              <form action="https://api.sheetmonkey.io/form/pb6sccNQ1k3ftRZiqjG6G" method="POST">
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="f-nume" class="form-label">Nume</label>
+                    <input type="text" id="f-nume" name="nume" placeholder="Introduceți numele" class="form-control" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="f-email" class="form-label">Email</label>
+                    <input type="email" id="f-email" name="email" placeholder="email@exemplu.com" class="form-control" required />
+                  </div>
+                </div>
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="f-telefon" class="form-label">Telefon</label>
+                    <input type="tel" id="f-telefon" name="telefon" placeholder="+373 XX XXX XXX" class="form-control" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="f-subiect" class="form-label">Subiect</label>
+                    <input type="text" id="f-subiect" name="subiect" placeholder="Subiectul mesajului" class="form-control" />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="f-mesaj" class="form-label">Mesaj</label>
+                  <textarea id="f-mesaj" name="mesaj" placeholder="Descrieți pe scurt proiectul sau întrebarea dvs…" class="form-control" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-orange btn-full">Trimite mesaj</button>
+              </form>
             </div>
-            <div class="form-group">
-              <label for="f-mesaj">Mesaj</label>
-              <textarea id="f-mesaj" name="mesaj" placeholder="Descrieți pe scurt proiectul sau întrebarea dvs…" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-orange btn-full">Trimite mesaj</button>
-          </form>
+          </div>
         </div>
       </div>
 
@@ -139,6 +145,6 @@
       </footer>
     </section>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
